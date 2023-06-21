@@ -1,0 +1,23 @@
+<body>
+    <!-- <h1>Person Object</h1>
+Person Name : <input type="text" [(ngModel)]="name"><br>
+Person Age : <input type="text" [(ngModel)]="age"><br>
+Gender : <input type="text" [(ngModel)]="gender"><br> -->
+
+
+<h1>Person Table</h1>
+<table border="2">
+    <thead>
+        <th>PersonName</th>
+        <th>PersonAge</th>
+        <th>Gender</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of PersonObj">
+            <td>{{p.name}}</td>
+            <td>{{p.age}}</td>
+            <td>{{p.gender}}</td>
+        </tr>
+    </tbody>
+</table>
+</body>
